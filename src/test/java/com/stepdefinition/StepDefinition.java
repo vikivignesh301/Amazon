@@ -38,7 +38,7 @@ public class StepDefinition extends BaseClass {
 
 	@When("user Click The Dropdown Options")
 	public void user_click_the_dropdown_options() throws IOException, InterruptedException {
-		expectedDDvalue = XLSX_Reader.particlarData("amazon", 2, 0);
+		expectedDDvalue = XLSX_Reader.particlarData("amazon", 1, 0);
 		sleep();
 		Select s = new Select(st.getHome_Page().getDropdown());
 		List<WebElement> ddoptions = s.getOptions();
@@ -54,7 +54,7 @@ public class StepDefinition extends BaseClass {
 	@When("user Enter The Product")
 	public void user_enter_the_product() throws IOException, InterruptedException {
 		sleep();
-		expectedinput = XLSX_Reader.particlarData("amazon", 2, 1);
+		expectedinput = XLSX_Reader.particlarData("amazon", 1, 1);
 		userInput(st.getHome_Page().getSearchbox(), expectedinput);
 	}
 

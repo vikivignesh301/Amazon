@@ -187,7 +187,7 @@ public class BaseClass {
 	public static WebDriver browserLaunch(String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\VIGNESH S\\eclipse-workspace\\Selenium\\Driver\\chromedriver.exe");
+					"C:\\Users\\VIGNESH S\\eclipse-workspace\\AMAZON_PROJECT\\driver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
